@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <h1>Movies!</h1>
+
+    <ul>
+      <% @movies.each do |k, v| %>
+        <li><a href="movies/<%= k%>"><%= v[:title] %></a></li>
+      <% end %>
+    </ul>
+  </body>
+</html>

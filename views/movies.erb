@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <h1>
+      The movie is <%= @movie[:title] %>
+    </h1>
+    <ul>
+      <li>year: <%=@movie[:year]%>  </li>
+      <li>synopsis: <%=@movie[:synopsis]%>  </li>
+      <li>rating: <%=@movie[:rating]%>  </li>
+      <li>genre: <%=@movie[:genre]%>  </li>
+      <li>studio: <%=@movie[:studio]%>  </li>
+
+
+      </ul>
+  </body>
+</html>
